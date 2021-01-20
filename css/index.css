@@ -1,0 +1,524 @@
+/* 搜索区域 search */
+
+.search {
+  /* width: 1920px; */
+  width: 100%;
+  height: 430px;
+  /* background: url(/assets/images/lolo.png) no-repeat; */
+  background: url(../img/lolo.png) no-repeat;
+  background-size: 100% 100%;
+  border: 1px solid transparent;
+}
+
+.search .site-download {
+  margin: 89px auto 19px;
+  width: 680px;
+  height: 78px;
+  font-size: 48px;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.search .site-introduce {
+  margin: 0 auto;
+  width: 720px;
+  height: 28px;
+  font-size: 18px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.search-box {
+  margin: 30px auto 20px;
+  width: 800px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 10px 0;
+}
+
+.func-search-class {
+  position: relative;
+  float: left;
+  width: 134px;
+  height: 38px;
+  border-right: 2px solid #e6e6e6;
+  cursor: pointer;
+}
+
+.search-box span {
+  display: inline-block;
+  width: 73px;
+  height: 16px;
+  margin: 10px 8px 10px 20px;
+  text-align: center;
+}
+
+.search-input {
+  float: left;
+  width: 618px;
+  height: 32px;
+  padding: 12px 0px 8px 20px;
+}
+
+.search-input input {
+  width: 100%;
+}
+
+.qtw-button {
+  float: left;
+  width: 36px;
+  height: 40px;
+  margin: 0px 10px 10px 0;
+  background-color: #fff;
+  /* background-image: url(/assets/images/logo02.png); */
+  background-image: url(../img/logo02.png);
+}
+
+.popular-pic {
+  margin: 0 auto;
+  width: 756px;
+  height: 14px;
+  font-size: 14px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #e6e6e6;
+}
+
+/* 搜索下拉选择框 */
+.search-selected {
+  display: none;
+  position: absolute;
+  top: 0;
+}
+
+.search-selected li {
+  display: inline-block;
+  text-align: center;
+  width: 132px;
+  height: 44px;
+  line-height: 44px;
+  color: #666;
+  background-color: #fff;
+}
+
+.search-selected li:hover {
+  color: #fff;
+  cursor: pointer;
+  background: -webkit-linear-gradient(left, #ffa53c, #f3504b);
+}
+
+/* .func-search-class:hover .search-selected {
+    display: block;
+} */
+
+/* 精选藏管 */
+
+a:hover {
+  color: #000;
+}
+
+.selected {
+  overflow: hidden;
+  width: 1290px;
+  margin: 0 auto;
+  max-height: 1220px;
+  padding-left: 15px;
+}
+
+.selected-text {
+  width: 137px;
+  height: 29px;
+  font-size: 30px;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  color: #333333;
+  margin: 50px auto 40px;
+  text-align: center;
+}
+
+/* 瀑布流css */
+
+#gallery-wrapper {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  /* height: 1670px!important; */
+}
+
+img.thumb {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.white-panel {
+  position: absolute;
+  background: white;
+  /* border-radius: 5px; */
+  /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); */
+  /* padding: 10px; */
+}
+
+/* 
+.white-panel:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    margin-top: -5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+} */
+
+/* 图片上按钮效果 */
+*[id*="gallery-wrapper"] a:hover,
+.datails-download:hover {
+  color: #fff;
+  background: -webkit-linear-gradient(left, #f59912, #e53025);
+}
+
+.morr {
+  width: 115px;
+  height: 40px;
+  background: linear-gradient(90deg, #f7ad44, #eb5753);
+  border-radius: 6px;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 8px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+/* 图片盒子内部元素样式 */
+
+.search-img-hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  /* Firefox 4 */
+  -webkit-transition: opacity 0.5s;
+  /* Safari 和 Chrome */
+  -o-transition: opacity 0.5s;
+  /* Opera */
+}
+
+.search-img-hover:hover {
+  opacity: 1;
+}
+
+.search-img-label {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 60px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 30px;
+}
+
+.search-img-Collection {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 30px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 3px;
+  z-index: 99;
+}
+
+.search-img-Collection img {
+  position: relative;
+  top: -2px;
+  width: 16px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.search-img-download {
+  position: absolute;
+  left: 50%;
+  width: 116px;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 40px;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(left, #ffa53c, #f3504b);
+}
+
+.search-img-download {
+  top: 50%;
+  transform: translate(-58px, -10px);
+}
+
+.search-img-more {
+  bottom: 60px;
+  transform: translateX(-58px);
+}
+
+.white-panel:hover .search-img-hover {
+  display: block;
+}
+
+/* 详情页面 */
+.details-background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+}
+
+.details-box {
+  position: absolute;
+  top: 205px;
+  left: 50%;
+  width: 1260px;
+  transform: translateX(-630px);
+  background: #ffffff;
+  border-radius: 10px;
+  font-size: 0;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.datails-close {
+  display: inline-block;
+  position: absolute;
+  top: 185px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #000;
+  line-height: 40px;
+  transform: translateX(638px);
+  z-index: 4;
+}
+
+.datails-top {
+  box-sizing: border-box;
+  margin: 0 30px;
+  height: 60px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.datails-top ol li {
+  float: left;
+  font-size: 16px;
+  line-height: 60px;
+  letter-spacing: 3px;
+}
+
+.datails-top ol li:nth-child(even) {
+  font-size: 40px;
+  transform: translateY(-2px);
+}
+
+.datails-img {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 820px;
+  /* height: 1250px; */
+  border-right: 1px solid #e6e6e6;
+  /* border-bottom: 1px solid #e6e6e6; */
+}
+
+.datails-img img {
+  width: 740px;
+  max-height: 100%;
+}
+
+.datails-text {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 50px 0 0 40px;
+  width: 397px;
+  /* height: 1250px; */
+  /* border-bottom: 1px solid #e6e6e6; */
+  vertical-align: top;
+  letter-spacing: 2px;
+}
+
+.datails-text h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+}
+
+.datails-explain {
+  margin-top: 40px;
+}
+
+.datails-explain li {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.datails-text-right {
+  margin-right: 13px;
+  float: right;
+  color: #000;
+  font-weight: 500;
+}
+
+.datails-data {
+  margin-top: 45px;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+
+.datails-Download-data {
+  margin-right: 13px;
+  float: right;
+}
+
+.datails-download {
+  display: block;
+  margin-top: 13px;
+  width: 340px;
+  height: 54px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 54px;
+  color: #fff;
+  background: -webkit-linear-gradient(left, #ffa53c, #f3504b);
+  border-radius: 10px;
+  cursor: pointer;
+  filter: brightness(1);
+  transition: all 0.2s ease 0s;
+}
+
+.datails-but {
+  margin-top: 63px;
+  width: 340px;
+  height: 54px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+}
+
+.datails-but ul {
+  height: 100%;
+}
+
+.datails-but ul li {
+  vertical-align: middle;
+  float: left;
+  width: 33%;
+  height: 100%;
+  line-height: 54px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  border-right: 1px solid #cccccc;
+}
+
+.datails-but ul li:last-child {
+  border-right: none;
+}
+
+.datails-but ul li img {
+  margin-right: 8px;
+  vertical-align: middle;
+  transform: translateY(-3px);
+}
+
+.datails-label {
+  overflow: hidden;
+  margin: 36px 23px 0 0;
+  font-size: 14px;
+}
+
+.datails-label li {
+  float: left;
+  margin: 0 10px 10px 0;
+  height: 26px;
+  line-height: 26px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.datails-label li:nth-child(n + 2) {
+  padding: 0 12px;
+  background-color: #e6e6e6;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.datails-author {
+  margin-top: 40px;
+  width: 340px;
+  height: 55px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  line-height: 55px;
+  font-size: 18px;
+}
+
+.datails-author-img {
+  display: inline-block;
+  margin: 0 10px 0 15px;
+  vertical-align: middle;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: url(../img/详情/Avatar\ sample\ 270.png) no-repeat center;
+}
+
+.datails-author-follow {
+  float: right;
+  margin-right: 22px;
+  color: #ec581e;
+}
+
+.datails-recommend {
+  padding: 40px 0 0 40px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.datails-recommend h4 {
+  font-size: 24px;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+
+.datails-more {
+  bottom: 40px;
+  transform: translateX(-38px);
+}

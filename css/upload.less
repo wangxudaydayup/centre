@@ -1,0 +1,328 @@
+body {
+    background: #FAFBFF;
+}
+
+// 版心
+.w {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+// 颜色渐变
+.gradient {
+    background: linear-gradient(151deg, #F79545, #EB5854) !important;
+    color: #FFFFFF !important;
+}
+
+// layui 下拉小三角样式修改
+.layui-form-select .layui-edge {
+    border: none;
+    right: 22px;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #9A9A9A;
+    border-bottom: 1px solid #9A9A9A;
+    transform: rotate(45deg);
+    transition: all 0.2s;
+}
+
+.layui-form-selected .layui-edge {
+    margin-top: 0;
+    transform: rotate(225deg);
+}
+
+// layui 多选框下拉框
+.layui-form-selected {
+
+    dl,
+    dt {
+        font-size: 16px !important;
+    }
+}
+
+// 表单区域
+#uploadList {
+
+    // 表头
+    .thead {
+        padding: 20px 0 60px;
+
+        h2 {
+            display: inline-block;
+            margin-right: 56px;
+            font-size: 24px;
+        }
+
+        button {
+            margin-right: 20px;
+            padding: 10px 18px;
+            background: #FFEEDC;
+            border-radius: 20px;
+            font-size: 18px;
+            color: #FA7512;
+        }
+    }
+
+    // 左边部分
+    .left {
+        float: left;
+        width: 930px;
+
+        // 公共部分
+        label {
+            display: block;
+            padding-bottom: 6px;
+            font-size: 18px;
+            color: #000;
+        }
+
+        input,
+        .accessory,
+        textarea {
+            height: 50px;
+            background-color: #FFFFFF;
+            border: 1px solid #E6E6E6;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        // 上传文件部分
+        #uploadFile {
+
+            #file {
+                float: left;
+                width: 450px;
+
+                // 附件
+                .accessory {
+                    padding-left: 20px;
+                    line-height: 50px;
+
+                    button {
+                        font-size: 16px;
+                        color: #343434;
+                    }
+                }
+            }
+
+            #format {
+                float: right;
+                width: 450px;
+            }
+        }
+
+        // 文件尺寸部分
+        #size {
+
+            input {
+                width: 260px;
+            }
+
+            span {
+                font-size: 16px;
+                margin-right: 10px;
+            }
+        }
+
+        // 分辨率
+        #resolution {
+            div {
+                font-size: 16px;
+            }
+
+            input {
+                width: 130px;
+            }
+
+            .layui-inline,
+            span {
+                position: relative;
+                top: 5px;
+            }
+        }
+
+        // 介绍部分
+        #presentation {
+            font-size: 16px;
+
+            textarea {
+                height: 120px;
+                padding: 16px 20px;
+                resize: none;
+            }
+
+            #wordsLength {
+                position: absolute;
+                right: 20px;
+                bottom: 8px;
+                color: #9A9A9A;
+            }
+
+        }
+
+        // 标签部分
+        #tags {
+
+            // 添加标签区域
+            .addTag {
+                height: 100px;
+                padding: 12px;
+                background: #FFFFFF;
+                border: 1px solid #E6E6E6;
+                border-radius: 10px;
+                font-size: 14px;
+                overflow-y: auto;
+
+
+                span {
+                    display: inline-block;
+                    padding: 2px 2px 3px 10px;
+                    background: #FFE1CC;
+                    border-radius: 3px;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+
+
+                    strong {
+                        margin-left: 6px;
+                        cursor: pointer;
+                    }
+                }
+
+                button {
+                    font-size: 16px;
+                    color: #9A9A9A;
+                }
+            }
+
+            // 底部标签列表
+            .tagList ul {
+                height: 66px;
+                padding-top: 25px;
+
+                li {
+                    float: left;
+                    height: 29px;
+                    line-height: 29px;
+                    padding-left: 23px;
+                    margin: 0 9px 12px 0;
+                    background: url(/img/tag.png) no-repeat;
+                    cursor: pointer;
+
+                    span {
+                        display: block;
+                        padding-right: 6px;
+                        background-color: #E7E6E5;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    // 右边部分
+    .right {
+        float: right;
+        width: 310px;
+
+        .avatar {
+            font-size: 14px;
+        }
+
+        // 封面
+        .cover {
+            overflow: hidden;
+            width: 310px;
+            height: 213px;
+            margin: 10px 0;
+            background: #ECEEF3;
+            border-radius: 10px;
+            text-align: center;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            h6 {
+                padding: 6px 0;
+                font-size: 16px;
+                color: #999999;
+            }
+
+            span {
+                font-size: 14px;
+                color: #CCCCCC;
+            }
+        }
+
+        // 上传按钮
+        button {
+            width: 310px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+
+        // 提示部分
+        h5 {
+            margin: 12px 0;
+            font-size: 16px;
+            color: #666666;
+        }
+
+        .prompt {
+            li {
+                position: relative;
+                margin-bottom: 25px;
+                padding-left: 25px;
+
+                i {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    margin-right: 2px;
+                }
+
+                span {
+                    width: 261px;
+                    font-size: 14px;
+                    color: #666666;
+                }
+            }
+        }
+    }
+
+    // 底部按钮
+    .submit {
+        padding: 30px 0 35px;
+        border-top: 1px solid #CCCCCC;
+
+        #publish {
+            width: 310px;
+            height: 60px;
+            margin-right: 18px;
+            border-radius: 30px;
+            font-size: 24px;
+        }
+
+        #save {
+            width: 280px;
+            height: 60px;
+            border: 1px solid #CCCCCC;
+            border-radius: 30px;
+            font-size: 24px;
+            color: #9A9A9A;
+        }
+    }
+}
+
+// 添加标签弹出层样式
+#dialog-tag {
+    padding: 35px 68px;
+
+    input {
+        height: 50px;
+        font-size: 16px;
+    }
+}

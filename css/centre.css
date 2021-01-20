@@ -1,0 +1,356 @@
+    /* 公共样式 */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #FAFBFF;
+    }
+    
+    button {
+        outline: none;
+        border: 0;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    /* 头部个人信息 Tab 栏区域 */
+    /* .nav .logo {
+        display: block;
+    }
+     */
+    
+    .nav .right {
+        display: none;
+    }
+    
+    .nav .user {
+        display: block;
+    }
+    
+    .header-bg {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        background: url(../img/BG.png) no-repeat;
+        background-size: 100% 100%;
+        min-width: 1920px;
+    }
+    
+    .typearea-head {
+        width: 100%;
+        height: 106px;
+        position: absolute;
+        top: -98px;
+    }
+    /* 版心 */
+    
+    .typearea {
+        position: relative;
+        width: 1260px;
+        left: 50%;
+        transform: translate(-37%);
+        /* margin: 0 auto; */
+    }
+    
+    .msg-box {
+        position: absolute;
+        width: 280px;
+        height: 516px;
+    }
+    
+    .photo {
+        position: relative;
+        width: 100%;
+        height: 106px;
+        background: url(../img/portrait.png);
+    }
+    
+    .photo img {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 6px;
+        left: 50.7%;
+        transform: translate(-50%);
+        border-radius: 50%;
+    }
+    
+    .userInfo {
+        width: 100%;
+        height: 410px;
+        background-color: #fff;
+    }
+    
+    .username {
+        position: relative;
+        height: 40px;
+        letter-spacing: 3px;
+        border-bottom: 1px solid #E6E6E6;
+    }
+    
+    .username h3 {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        color: #343434;
+        font-weight: 500;
+    }
+    
+    .info {
+        height: 204px;
+        border-bottom: 1px solid #E6E6E6;
+    }
+    
+    .info h3 {
+        height: 55px;
+        line-height: 55px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        padding-left: 20px;
+        color: #343434;
+    }
+    
+    .info-box {
+        display: flex;
+    }
+    
+    .info-icon,
+    .info-list {
+        flex-direction: column;
+    }
+    
+    .info-icon li {
+        width: 50px;
+        line-height: 35px;
+        text-align: center;
+        padding-left: 5px;
+    }
+    
+    .info-list {
+        line-height: 35px;
+        letter-spacing: 1px;
+        color: #666666;
+        font-size: 16px;
+    }
+    /* 访客区域 */
+    
+    .visitor h3 {
+        height: 55px;
+        line-height: 55px;
+        font-size: 18px;
+        letter-spacing: 2px;
+        padding-left: 20px;
+        color: #343434;
+    }
+    
+    .visitor_box {
+        display: flex;
+    }
+    
+    .visitor_list {
+        display: flex;
+        flex: 33.33%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding-top: 15px; */
+    }
+    
+    .visitor_list img {
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+    }
+    
+    .visitor_list p {
+        font-size: 14px;
+        width: 60px;
+        padding: 5px 0;
+        color: #343434;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+    
+    .visitor_list span {
+        font-size: 12px;
+        color: #9a9a9a;
+    }
+    /* tab 栏菜单切换 */
+    
+    .tab-menu {
+        position: absolute;
+        top: 61px;
+        left: 320px;
+        width: 520px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .sizeColor {
+        color: #fff !important;
+    }
+    
+    .tab-menu li a {
+        font-size: 18px;
+        color: #e2d8d4;
+    }
+    /* 瀑布流图片区域 */
+    
+    .img-box {
+        position: relative;
+        width: 950px;
+        margin-left: 320px;
+        background-color: #fff;
+        padding-bottom: 50px;
+        /* min-height: 600px; */
+    }
+    
+    .showMore {
+        display: block;
+    }
+    
+    .menu-list {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        margin-left: 320px;
+        align-items: center;
+    }
+    
+    .menu-list a {
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        letter-spacing: 2px;
+        font-size: 18px;
+        color: #FA7412;
+        background-color: #FFEDDB;
+        border-radius: 20px;
+        padding: 0 19px;
+        margin: 0 10px;
+    }
+    
+    .color_orange {
+        color: #fff !important;
+        background: -webkit-linear-gradient(left, #F5A544, #EB5B53);
+    }
+    
+    .color_orange2 {
+        /* color: #fff !important; */
+        background: -webkit-linear-gradient(left, #F38D13, #E63425);
+    }
+    /* 瀑布流插件 */
+    
+    #gallery-wrapper {
+        position: relative;
+        width: 960px;
+        min-height: 800px;
+    }
+    
+    img.thumb {
+        width: 310px;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .white-panel {
+        position: absolute;
+    }
+    
+    .top-box {
+        position: absolute;
+        background-color: rgb(0, 0, .02);
+        opacity: 0.5;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .top-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        display: none;
+    }
+    
+    .amend {
+        display: block;
+        width: 115px;
+        height: 40px;
+        margin: 10px 0;
+        border-radius: 6px;
+        font-size: 16px;
+        letter-spacing: 2px;
+        cursor: pointer;
+        /* transition: all .2s; */
+    }
+    /* .amend:hover {
+        transform: translate(0, -3px);
+        box-shadow: .5px 1px 2px .5px rgba(0, 0, 0, 0.1);
+    } */
+    /* 显示更多按钮 */
+    
+    #ShowMore {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    .btn {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        display: block;
+        width: 115px;
+        height: 40px;
+        font-size: 16px;
+        border-radius: 6px;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+    /* .btn-bgc {
+        background-color: #ccc !important;
+    } */
+    /* .colorText {
+        color: #8C7B4B !important;
+    } */
+    
+    .foot {
+        margin-top: 0 !important;
+    }
+    
+    .white-panel::before {
+        content: '';
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5)
+    }
+    
+    .white-panel:hover::before {
+        display: block;
+    }
+    
+    .noData {
+        position: absolute;
+        left: 50% !important;
+        width: auto !important;
+        transform: translate(-50%);
+        margin-top: 20px;
+    }

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上传2</title>
+    <!-- 导入 layui 的样式表 -->
+    <link rel="stylesheet" href="lib/layui/css/layui.css" />
+    <!-- 上传进度条样式 -->
+    <link rel="stylesheet" href="lib/nprogress/nprogress.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/upload2.css">
+</head>
+
+<body>
+    <!-- 头部导航栏 -->
+    <header class="nav">
+        <!-- 登陆注册按钮 -->
+        <div class="right">
+            <div id="register"><a href="javascript:;">注册</a></div>
+            <div id="login"> <a href="javascript:;">登陆</a></div>
+        </div>
+        <!-- 登录后用户部分 -->
+        <div class="user">
+            <a href="javascript:;"> <img src="img/member.png" alt=""></a>
+            <div class="avatar">
+                <a href="javascript:;"> <img src="img/avatar.png" alt=""></a>
+                <ol>
+                    <li><a class="current" href="upload.html">上传</a></li>
+                    <li><a href="centre.html">个人主页</a></li>
+                    <li><a href="javascript:;" id="download_history">下载记录</a></li>
+                    <li><a class="exit" href="javascript:;">退出</a></li>
+                </ol>
+            </div>
+        </div>
+        <!-- 左侧图标 -->
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <!-- 中间导航栏 -->
+        <div class="w">
+            <div class="menus">
+                <img src="img/menus.png" alt="">
+                <ul class="nav-box">
+                    <li class="color-change"><a href="index.html">首页</a></li>
+                    <li><a href="javascript:;">摄影</a></li>
+                    <li><a href="design.html">设计模板</a></li>
+                    <li><a href="javascript:;">创意背景</a></li>
+                    <li><a href="javascript:;">插画</a></li>
+                    <li><a href="javascript:;">免扣元素</a></li>
+                    <li><a href="javascript:;">办公文档</a></li>
+                    <li><a href="javascript:;">视频</a></li>
+                    <li><a href="javascript:;">商城</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 表单 -->
+    <form class="layui-form w" id="uploadList" lay-filter="formDemo">
+        <!-- 表头 -->
+        <div class="thead">
+            <h2>上传列表</h2>
+            <button type="button" id="design">设计模板</button>
+            <button type="button">创意背景</button>
+            <button type="button">插画</button>
+            <button type="button" class="gradient">摄影</button>
+            <button type="button">免扣元素</button>
+            <button type="button">办公文档</button>
+        </div>
+        <!-- 上传作品部分 -->
+        <div class="uploading">
+            <div class="layui-upload-list clearfix" id="workArea">
+                <div class="layui-upload-drag fl" id="uploadArea">
+                    <i><img src="img/uploading.png" alt=""></i>
+                    <h6>上传作品</h6>
+                    <p>格式：jpg/png/gif</p>
+                </div>
+                <div class="pic" style="display: none;">
+                    <img src="">
+                    <div id="bg"><button type="button" class="gradient">删除</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix">
+            <!-- 左边部分 -->
+            <div class="left">
+                <!-- 作品名称 -->
+                <div class="layui-form-item">
+                    <label>作品名称</label>
+                    <div>
+                        <input type="text" name="name" required lay-verify="required|production" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <!-- 介绍 -->
+                <div class="layui-form-item layui-form-text" id="presentation">
+                    <label>介绍</label>
+                    <div style="position: relative;">
+                        <textarea name="description" placeholder="作品说明（选填）" class="layui-textarea" maxlength="1000"></textarea>
+                        <span id="wordsLength">0/1000</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 右边部分 -->
+            <div class="right">
+                <!-- 分类 -->
+                <div class="layui-form-item">
+                    <label>分类</label>
+                    <div class="classify">
+                    </div>
+                </div>
+                <!-- 添加标签 -->
+                <div class="layui-form-item layui-form-text">
+                    <label>标签</label>
+                    <div class="addTag" lay-verify="req">
+                        <button type="button">添加标签</button>
+                    </div>
+                </div>
+                <!-- 标签 -->
+                <div class="tagList">
+                    <ul class="clearfix">
+                        <li><span>UI</span></li>
+                        <li><span>APP</span></li>
+                        <li><span>软件界面</span></li>
+                        <li><span>PSD</span></li>
+                        <li><span>音乐</span></li>
+                        <li><span>播放器</span></li>
+                        <li><span>动画</span></li>
+                        <li><span>平面</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 底部按钮 -->
+        <div class="submit">
+            <div class="layui-form-item">
+                <button class="layui-btn gradient" lay-submit id="publish">立即发布</button>
+                <!-- <img src="img/loading.gif" alt="" style="display: none;" id="loading" /> -->
+                <button class="layui-btn layui-btn-primary" lay-submit id="save">保存</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- 底部模块 -->
+    <div class="foot">
+        <div class="concerning">
+            <div class="concerning_left">
+
+                <img src="img/logo02.png" alt="">
+                <img src="img/UXDL.png" alt="">
+                <p>User Experience Design Library</p>
+                <h5>用户体验设计库</h5>
+                <ul class="foot-code">
+                    <li>
+                        <img src="img/code1.png" alt="">
+                        <p>公众号</p>
+                    </li>
+                    <li>
+                        <img src="img/code2.png" alt="">
+                        <p>微信</p>
+                    </li>
+                    <li>
+                        <img src="img/code3.png" alt="">
+                        <p>学习教程</p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="concerning_right">
+                <dl>
+                    <dt>图形资源</dt>
+                    <dd><a href="javascript:;">图标</a></dd>
+                    <dd><a href="javascript:;">摄影</a></dd>
+                    <dd><a href="javascript:;">矢量插图</a></dd>
+                    <dd><a href="javascript:;">设计模板</a></dd>
+                    <dd><a href="javascript:;">创意背景</a></dd>
+                </dl>
+                <dl>
+                    <dt>关于UXDL</dt>
+                    <dd><a href="javascript:;">关于我们</a></dd>
+                    <dd><a href="javascript:;">套餐价格</a></dd>
+                    <dd><a href="javascript:;">授权协议</a></dd>
+                    <dd><a href="javascript:;">联系我们</a></dd>
+                </dl>
+                <dl>
+                    <dt>法律</dt>
+                    <dd><a href="javascript:;">使用条款</a></dd>
+                    <dd><a href="javascript:;">隐私政策</a></dd>
+                    <dd><a href="javascript:;">许可协议</a></dd>
+                    <dd><a href="javascript:;">贡献者条款</a></dd>
+                    <dd><a href="javascript:;">支持中心</a></dd>
+                </dl>
+            </div>
+
+        </div>
+        <div class="clearfix">
+            <p>© 2020 启智融创科技有限公司. All Rights Reserved.苏ICP备19044258号-2 苏 B2-20191025号 </p>
+            <p> <img src="img/beianico.png" alt=""> 京公网安备 11010502038309号</p>
+        </div>
+    </div>
+
+    <!-- 分类可选项模板引擎 -->
+    <script type="text/html" id="classifyTem">
+        <select name="category2_id" lay-verify="required">
+            <option value=""></option>
+            {{each categoryList}}
+            <option value="{{$value.id}}">{{$value.name}}</option>
+            {{/each}}
+        </select>
+    </script>
+
+    <!-- 添加标签的弹出层数据模板 -->
+    <script type="text/html" id="dialog-add">
+        <form class="layui-form">
+            <div class="layui-form-item" id="dialog-tag">
+                <input type="text" name="tag" required lay-verify="required|max5" placeholder="请输入标签名" autocomplete="off" class="layui-input">
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" id="dialog-confirm" lay-submit>确认添加</button>
+                    <button type="button" class="layui-btn layui-btn-primary" id="dialog-cancel">取消</button>
+                </div>
+            </div>
+        </form>
+    </script>
+
+    <!-- 导入 layui 的 js 文件 -->
+    <script src="lib/layui/layui.all.js"></script>
+    <!-- 导入 jQuery -->
+    <script src="lib/jquery.js"></script>
+    <!-- 导入模板引擎 -->
+    <script src="lib/template-web.js"></script>
+    <!-- 进度条 js -->
+    <script src="lib/nprogress/nprogress.js"></script>
+    <!-- 公共部分 -->
+    <script src="js/common.js"></script>
+    <!-- 导入自己的 js 文件 -->
+    <script src="js/upload2.js"></script>
+</body>
+
+</html>

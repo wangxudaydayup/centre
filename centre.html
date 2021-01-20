@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人中心</title>
+    <link rel="stylesheet" href="css/pinterest_grid.css" />
+    <link rel="stylesheet" href="lib/base.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="./lib/layui/css/layui.css" />
+
+    <link rel="stylesheet" href="./css/centre.css" />
+</head>
+
+<body>
+    <!-- 顶部公共区域 -->
+    <!-- 头部导航栏 -->
+    <!-- 头部导航栏 -->
+    <header class="nav">
+        <!-- 登陆注册按钮 -->
+        <div class="right">
+            <div id="register"><a href="javascript:;">注册</a></div>
+            <div id="login"><a href="javascript:;">登陆</a></div>
+        </div>
+        <!-- 登录后用户部分 -->
+        <div class="user">
+            <a href="javascript:;"><img src="img/member.png" alt="" /></a>
+            <div class="avatar">
+                <a href="javascript:;"><img src="img/avatar.png" alt="" /></a>
+                <ol>
+                    <li><a class="current" href="upload.html">上传</a></li>
+                    <li><a href="centre.html">个人主页</a></li>
+                    <li><a href="javascript:;" id="download_history">下载记录</a></li>
+                    <li><a class="exit" href="javascript:;">退出</a></li>
+                </ol>
+            </div>
+        </div>
+        <!-- 左侧图标 -->
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="" /></a>
+        </div>
+        <!-- 中间导航栏 -->
+        <div class="w">
+            <div class="menus">
+                <img src="img/menus.png" alt="" />
+                <ul class="nav-box">
+                    <li class="color-change"><a href="index.html">首页</a></li>
+                    <li><a href="javascript:;">摄影</a></li>
+                    <li><a href="design.html">设计模板</a></li>
+                    <li><a href="javascript:;">创意背景</a></li>
+                    <li><a href="javascript:;">插画</a></li>
+                    <li><a href="javascript:;">免扣元素</a></li>
+                    <li><a href="javascript:;">办公文档</a></li>
+                    <li><a href="javascript:;">视频</a></li>
+                    <li><a href="javascript:;">商城</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 头部个人信息 tab栏 区域 -->
+    <div class="header-bg"></div>
+    <div class="typearea">
+        <div class="typearea-head">
+            <!-- 个人信息框 -->
+            <div class="msg-box">
+                <!-- 个人头像 -->
+                <div class="photo">
+                    <img src="./img/t.png" alt="">
+                </div>
+                <!-- 用户信息区域 -->
+                <div class="userInfo">
+                    <!-- 用户名 -->
+                    <div class="username">
+                        <h3>设计诗</h3>
+                    </div>
+                    <!-- 名片 -->
+                    <div class="info">
+                        <h3>个人名片</h3>
+                        <div class="info-box">
+                            <ul class="info-icon">
+                                <li> <img src="./img/user.png" alt="" /></li>
+                                <li> <img src="./img/call.png" alt="" /></li>
+                                <li> <img src="./img/QQ.png" alt="" /></li>
+                                <li> <img src="./img/weixin (1).png" alt="" /></li>
+                            </ul>
+                            <ul class="info-list">
+                                <li>454812</li>
+                                <li>18911187544</li>
+                                <li>951177084</li>
+                                <li>xxxccxxc</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 访客区域 -->
+                    <div class="visitor">
+                        <h3>最近访问</h3>
+                        <div class="visitor_box">
+                            <div class="visitor_list">
+                                <img src="./img/AA.png" alt="" />
+                                <p>ASAS</p>
+                                <span>2020-08-20</span>
+                            </div>
+                            <div class="visitor_list">
+                                <img src="./img/CC.png" alt="" />
+                                <p>COCOoooopppppppppppp</p>
+                                <span>2020-08-20</span>
+                            </div>
+                            <div class="visitor_list">
+                                <img src="./img/DD.png" alt="" />
+                                <p>WDDDAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+                                <span>2020-08-20</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- tab 栏菜单 -->
+            <ul class="tab-menu">
+                <li><a href="javascript:;" class="sizeColor" id="index">首页</a></li>
+                <li><a href="javascript:;" id="create">创作</a></li>
+                <li><a href="javascript:;" id="userCollect">收藏</a></li>
+                <li><a href="javascript:;" id="history">记录</a></li>
+            </ul>
+        </div>
+        <!-- 图片区域 -->
+        <!-- 图片区域菜单栏 -->
+        <div class="menu-list">
+            <a href="javascript:;" class="color_orange" id="all">全部</a>
+            <a href="javascript:;">设计模板</a>
+            <a href="javascript:;">摄影</a>
+            <a href="javascript:;">创意背景</a>
+            <a href="javascript:;">免扣元素</a>
+            <a href="javascript:;">插画</a>
+            <a href="javascript:;">办公文档</a>
+            <a href="javascript:;">视频</a>
+
+        </div>
+        <div class="img-box">
+            <!-- 首页 -->
+            <div class="img-list">
+
+                <!-- 瀑布流布局图片区域 -->
+                <section id="gallery-wrapper"></section>
+
+            </div>
+            <!-- 显示更多按钮 -->
+            <div id="ShowMore">
+                <button class="btn color_orange">显示更多</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部footer -->
+    <div class="foot">
+        <div class="concerning">
+            <div class="concerning_left">
+                <img src="img/logo02.png" alt="" />
+                <img src="img/UXDL.png" alt="" />
+                <p>User Experience Design Library</p>
+                <h5>用户体验设计库</h5>
+                <ul class="foot-code">
+                    <li>
+                        <img src="img/code1.png" alt="" />
+                        <p>公众号</p>
+                    </li>
+                    <li>
+                        <img src="img/code2.png" alt="" />
+                        <p>微信</p>
+                    </li>
+                    <li>
+                        <img src="img/code3.png" alt="" />
+                        <p>学习教程</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="concerning_right">
+                <dl>
+                    <dt>图形资源</dt>
+                    <dd><a href="javascript:;">图标</a></dd>
+                    <dd><a href="javascript:;">摄影</a></dd>
+                    <dd><a href="javascript:;">矢量插图</a></dd>
+                    <dd><a href="javascript:;">设计模板</a></dd>
+                    <dd><a href="javascript:;">创意背景</a></dd>
+                </dl>
+                <dl>
+                    <dt>关于UXDL</dt>
+                    <dd><a href="javascript:;">关于我们</a></dd>
+                    <dd><a href="javascript:;">套餐价格</a></dd>
+                    <dd><a href="javascript:;">授权协议</a></dd>
+                    <dd><a href="javascript:;">联系我们</a></dd>
+                </dl>
+                <dl>
+                    <dt>法律</dt>
+                    <dd><a href="javascript:;">使用条款</a></dd>
+                    <dd><a href="javascript:;">隐私政策</a></dd>
+                    <dd><a href="javascript:;">许可协议</a></dd>
+                    <dd><a href="javascript:;">贡献者条款</a></dd>
+                    <dd><a href="javascript:;">支持中心</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="clearfix">
+            <p>© 2020 启智融创科技有限公司. All Rights Reserved.苏ICP备19044258号-2 苏 B2-20191025号</p>
+            <p><img data-funlazy="img/beianico.png" alt="" /> 京公网安备 11010502038309号</p>
+        </div>
+    </div>
+
+    <!-- 个人头像信息模板引擎 -->
+    <script type="text/html" id="templatePic">
+        {{if nickName == ''}}
+        <img src="img/tou.jpg" id="head_pic" /> {{else if head_pic !== ''}}<img src="{{head_pic}}" /> {{/if}}
+    </script>
+
+    <!-- 个人信息电话号码QQ微信 -->
+    <script type="text/html" id="templatePhone">
+        <!-- 昵称 -->
+        {{if nickName == ''}}
+        <li>未填写</li>
+        {{else if nickName !== ''}}
+        <li>{{nickName}}</li>
+        {{/if}}
+        <!-- 手机号码 -->
+        {{if phone == ''}}
+        <li>未填写</li>
+        {{else if phone !== ''}}
+        <li>{{phone}}</li>
+        {{/if}}
+
+        <!-- QQ号码 -->
+        {{if qq == 'null'}}
+        <li>未填写</li>
+        {{else if qq !== ''}}
+        <li>{{qq}}</li>
+        {{/if}}
+        <!-- 微信 -->
+        {{if weixin == ''}}
+        <li>未填写</li>
+        {{else if weixin !== ''}}
+        <li>{{weixin}}</li>
+        {{/if}}
+    </script>
+    <!-- 用户昵称模板 -->
+    <script type="text/html" id="templateName">
+        {{if nickName == ''}}
+        <h3>{{phone}}</h3>
+        {{else if nickName !== ''}}
+        <h3>{{nickName}}</h3>
+        {{/if}}
+        <h3>{{nickName}}</h3>
+    </script>
+
+    <!-- 个人中心首页 -->
+
+    <script type="text/html" id="templateUserWorks">
+        <!-- <section id="gallery-wrapper"> -->
+        {{each data.rows}}
+        <article class="white-panel">
+            <div class="top-btn ">
+                <button class="amend color_orange " id="alter" data-id="{{$value.id}}">修改</button>
+                <button class="amend color_orange " id="deleteUserImg" data-index="{{$value.id}}">删除</button>
+            </div>
+            <img src="{{$value.show_image}}" class="thumb" />
+        </article>
+        {{/each}}
+        <!-- </section> -->
+    </script>
+
+    <!-- 用户个人收藏图片 模板 -->
+    <script type="text/html" id="templateCollect">
+        {{each favourites}}
+        <article class="white-panel">
+            <div class="top-btn ">
+                <button class="amend color_orange " id="delcancel" data-index="{{$value.id}}">取消收藏</button>
+            </div>
+            <img src="{{$value.show_image}}" class="thumb" />
+        </article>
+        {{/each}}
+    </script>
+
+    <!-- 用户下载记录模板 -->
+    <script type="text/html" id="templateHistory">
+        {{each downloadHistory}}
+        <article class="white-panel">
+            <div class="top-btn ">
+                <button class="amend color_orange " id="delDownLoadHistory" data-index="{{$value.id}}">删除</button>
+            </div>
+            <img src="{{$value.show_image}}" class="thumb" />
+        </article>
+        {{/each}}
+    </script>
+    <!-- 引入外部Js文件 -->
+    <script src="./lib/layui/layui.all.js"></script>
+    <script src="./lib/jquery.js"></script>
+    <script src="./lib/template-web.js"></script>
+
+    <!-- 瀑布流js文件 -->
+    <script src="./lib/pinterest_grid.js"></script>
+
+
+
+    <!-- 引入自己的js -->
+    <script src="/js/common.js"></script>
+    <script src="./js/centre.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

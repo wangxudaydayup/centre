@@ -1,0 +1,592 @@
+/* 版心 */
+
+.w {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+
+/* 导航栏 */
+
+@media screen and (max-width: 1698px) {
+    ul.nav-box {
+        display: none;
+        position: absolute;
+        padding: 20px 0 20px 50px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        z-index: 999;
+    }
+    ul.nav-box li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menus {
+        display: inline-block;
+    }
+    .menus img {
+        display: inline-block !important;
+        margin: 28px 6px 10px 10px;
+        cursor: pointer;
+    }
+    .menus:hover .nav-box {
+        display: block;
+    }
+}
+
+.nav {
+    height: 80px;
+    font-size: 16px;
+    background: #fff;
+}
+
+.nav .menus img {
+    display: none;
+}
+
+.nav .right {
+    float: right;
+}
+
+
+/* logo图 */
+
+.logo {
+    float: left;
+    width: 144px;
+    height: 41px;
+    margin: 22px 0px 0 60px;
+}
+
+
+/* 导航栏设计盒子 */
+
+.nav-box {
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #191B26;
+    padding: 32px 0;
+}
+
+.nav ul li {
+    float: left;
+    margin-right: 85px;
+}
+
+
+/* 点击颜色改变 */
+
+.color-change {
+    background: linear-gradient(0deg, #F7AD44 0%, #EB5753 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* 登陆注册按钮 */
+
+.nav #register {
+    margin: 26px 60px 0 0;
+    float: right;
+    width: 78px;
+    height: 34px;
+    text-align: center;
+    line-height: 30px;
+    border: 2px solid #000000;
+    border-radius: 17px;
+}
+
+.nav #register a {
+    display: block;
+}
+
+.nav #login {
+    float: right;
+    margin: 30px 25px;
+    width: 36px;
+    height: 16px;
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #191B26;
+}
+
+
+/* 登陆注册显示隐藏的盒子开始 */
+
+#layui-layer-shade {
+    display: none;
+}
+
+#login-box1,
+#login-box2,
+#register-box1 {
+    z-index: 100;
+    position: absolute;
+    left: 740px;
+    top: 211px;
+    width: 440px;
+    height: 670px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    padding: 0 45px;
+}
+
+#register-box2 {
+    width: 440px;
+    height: 735px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    z-index: 100;
+    position: absolute;
+    left: 740px;
+    top: 211px;
+    padding: 0 45px;
+}
+
+
+/* 盒子隐藏 */
+
+#login-box1,
+#login-box2,
+#register-box1,
+#register-box2 {
+    display: none;
+}
+
+
+/* 登陆标题行 */
+
+.title-line {
+    width: 100%;
+    height: 63px;
+    text-align: center;
+    font-size: 36px;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #000000;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+
+/* 输入手机号码盒子 */
+
+form .layui-input {
+    background: #FFFFFF;
+    border: 1px solid #9BA0BB;
+    border-radius: 4px;
+}
+
+
+/* 验证码盒子 */
+
+.pass-key {
+    width: 200px;
+    height: 38px;
+    line-height: 1.3;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #fff;
+    border-radius: 2px;
+    border-color: #e6e6e6;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+
+/* 验证码发送按钮*/
+
+.floatr-box {
+    width: 136px;
+    float: right;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #FFFFFF !important;
+    background: linear-gradient(90deg, #F7AD44, #EB5753);
+}
+
+.color-trans {
+    background: #8753e9 !important;
+}
+
+.bgc-change {
+    background: linear-gradient(90deg, #F7AD44, #EB5753) !important;
+}
+
+
+/* 登陆按钮 */
+
+.login-btn {
+    width: 350px;
+    height: 48px;
+    background: #E6E6E6;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+
+/* 分割线 */
+
+#separation {
+    margin-bottom: 30px;
+}
+
+.line-left,
+.line-right {
+    float: left;
+    width: 150px;
+    height: 1px;
+    border: 1px solid #9BA0BB;
+    margin-top: 20px;
+}
+
+.line-word {
+    float: left;
+    height: 14px;
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #9BA0BB;
+    margin: 13px 6px 2px;
+}
+
+.layui-form-item {
+    position: relative;
+}
+
+
+/* 密码登陆盒子 */
+
+.passwords-box {
+    width: 350px;
+    height: 48px;
+}
+
+#tab-passwords1 i,
+#tab-passwords2 i,
+#tab-passwords4 i {
+    position: absolute;
+    left: 110px;
+    top: 8px;
+}
+
+#tab-passwords3 .img1 {
+    position: absolute;
+    left: 70px;
+    top: 6px;
+}
+
+#tab-passwords3 .img2 {
+    position: absolute;
+    left: 110px;
+    top: 6px;
+}
+
+#tab-passwords1 button,
+#tab-passwords2 button,
+#tab-passwords3 button,
+#tab-passwords4 button {
+    width: 350px;
+    height: 48px;
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+}
+
+
+/* qq登陆盒子 */
+
+.box-radiu {
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+}
+
+.qq-box i {
+    position: absolute;
+    left: 110px;
+    top: 6px;
+}
+
+.qq-box button {
+    background: #4B80D8;
+    width: 350px;
+    height: 48px;
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.login-qq img {
+    width: 23px;
+    height: 28px;
+}
+
+
+/* 微信登陆盒子 */
+
+.vx-box {
+    margin-bottom: 30px;
+}
+
+.login-vx img {
+    width: 35px;
+    height: 28px;
+}
+
+.vx-box button {
+    width: 350px;
+    height: 48px;
+    background: #13C435;
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.vx-box i {
+    position: absolute;
+    left: 110px;
+    top: 8px;
+}
+
+
+/* 登陆图标 */
+
+
+/* .layui-icon {
+    position: absolute;
+    left: 110px;
+    top: 8px;
+} */
+
+.pass-login {
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #333333;
+}
+
+#icon-before {
+    position: absolute;
+    left: 90px !important;
+    top: 12px !important;
+}
+
+
+/* 忘记密码跳转 */
+
+form .forget-link {
+    text-align: center;
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #69708C;
+    margin-bottom: 48px;
+}
+
+form .forget-link a {
+    color: #69708C;
+}
+
+
+/* 还没有账号去注册行 */
+
+form .to-register {
+    text-align: center;
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #69708C;
+}
+
+form .to-register a {
+    color: #69708C;
+}
+
+
+/* 注册盒子链接 到登陆和隐私条款*/
+
+.blue-style {
+    color: #4949D7 !important;
+}
+
+.current {
+    background: linear-gradient(151deg, #F79545, #EB5854) !important;
+    color: #FFFFFF !important;
+}
+
+.user {
+    /* display: none; */
+    position: absolute;
+    top: 25px;
+    right: 60px;
+}
+
+.user .avatar {
+    display: inline-block;
+    height: 40px;
+    margin-left: 15px;
+}
+
+.user .avatar:hover ol {
+    display: block;
+}
+
+.user .avatar ol {
+    display: none;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 115px;
+    height: 191px;
+    padding: 7.5px 0;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.14);
+    text-align: center;
+    z-index: 111;
+}
+
+.user .avatar ol li a {
+    display: block;
+    width: 115px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    color: #666;
+}
+
+
+/* 底部模块 */
+
+.foot {
+    /* width: 1920px; */
+    height: 500px;
+    background: #181A1A;
+    margin-top: 60px;
+}
+
+.foot .concerning {
+    width: 1160px;
+    height: 355px;
+    margin: 0 auto;
+    padding: 60px 0 30px;
+    border-bottom: 1px solid #000000;
+    box-shadow: 0px 1px 0px #333;
+}
+
+.foot .concerning .concerning_left {
+    float: left;
+    width: 340px;
+    height: 270px;
+}
+
+.foot .concerning .concerning_left .logo02 {
+    margin-right: 15px;
+}
+
+.foot .concerning .concerning_left>p {
+    height: 16px;
+    margin-top: 17px;
+    margin-bottom: 10px;
+    width: 288px;
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.foot .concerning .concerning_left>h5 {
+    width: 150px;
+    height: 16px;
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+
+.foot .concerning .concerning_left .foot-code {
+    margin-top: 49px;
+}
+
+.foot .concerning .concerning_left .foot-code li {
+    float: left;
+    margin-right: 20px;
+    width: 92px;
+    text-align: center;
+}
+
+.foot .concerning .concerning_left .foot-code li img {
+    width: 92px;
+    height: 92px;
+}
+
+.foot .concerning .concerning_left .foot-code li p {
+    height: 16px;
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+    line-height: 30px;
+}
+
+.foot .concerning .concerning_right {
+    float: right;
+    width: 574px;
+    height: 220px;
+}
+
+.foot .concerning .concerning_right dl {
+    float: left;
+    height: 16px;
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.foot .concerning .concerning_right dl dt {
+    margin-bottom: 28px;
+    letter-spacing: 2px;
+}
+
+.foot .concerning .concerning_right dl dd {
+    margin-bottom: 15px;
+}
+
+.foot .concerning .concerning_right dl dd a {
+    width: 86px;
+    height: 176px;
+    font-size: 16px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.foot .concerning .concerning_right dl:nth-child(-n+2) {
+    margin-right: 148px;
+}
+
+.foot .clearfix {
+    width: 800px;
+    height: 100px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.foot .clearfix p {
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+    line-height: 36px;
+}

@@ -1,0 +1,634 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  /* height: 100%; */
+  background-color: #fafbff;
+  font-family: "Source Han Sans CN";
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+/* 导航栏 */
+@media screen and (max-width: 1162px) {
+  .fication-slide {
+    display: none;
+  }
+}
+
+/* 搜索框模块 */
+/* 搜索模块下拉 */
+.fication-slide {
+  position: fixed;
+  top: -145px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  padding-top: 5px;
+  background-color: #fff;
+  z-index: 2;
+  transition: all 0.3s ease-in;
+}
+
+.fication-slide .top-search-box {
+  display: inline-block;
+  width: 66%;
+}
+
+.fication-slide .user {
+  margin-top: 12px;
+}
+
+.fication-slide .slide-logo {
+  float: left;
+  width: 17%;
+  padding: 8px 0 0 9px;
+}
+
+/* .fication-slide .slide-logo img {
+  width: 50%;
+} */
+
+.fication-slide .slide-logo span {
+  /* float: left; */
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  width: 48%;
+  height: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+/* 搜索模块 */
+.search-bigbox {
+  padding-top: 20px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.top-search-box {
+  margin: 0 auto 18px;
+  width: 1266px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 4px 0;
+  border: 4px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.func-search-class {
+  position: relative;
+  float: left;
+  width: 134px;
+  height: 32px;
+  border-right: 2px solid #e6e6e6;
+  letter-spacing: 0px;
+  transform: translateY(5px);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.top-search-box span {
+  display: inline-block;
+  margin: 6px 8px 10px 20px;
+  width: 73px;
+  height: 16px;
+  color: #666;
+  text-align: center;
+}
+
+.search-input {
+  float: left;
+  margin-left: 20px;
+  width: 70%;
+  height: 32px;
+  padding: 12px 0px 8px 0px;
+}
+
+.search-input input {
+  width: 100%;
+}
+
+.qtw-button {
+  float: right;
+  width: 36px;
+  height: 40px;
+  margin: 2px 10px 10px 0;
+  background-color: #fff;
+  background-image: url(../img/logo02.png);
+}
+
+/* 搜索下拉选择框 */
+.search-selected {
+  display: none;
+  position: absolute;
+  top: -5px;
+  left: 0;
+}
+
+.search-selected li {
+  display: inline-block;
+  text-align: center;
+  width: 132px;
+  height: 44px;
+  line-height: 44px;
+  color: #666;
+  background-color: #fff;
+}
+
+.search-selected li:hover {
+  color: #fff;
+  cursor: pointer;
+  background: -webkit-linear-gradient(left, #ffa53c, #f3504b);
+}
+
+/* .func-search-class:hover .search-selected {
+  display: block;
+} */
+
+/* 分类模块  */
+
+.classification {
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+}
+
+.fication {
+  width: 1260px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.fication .fic-text {
+  float: left;
+  height: 60px;
+  padding-top: 12px;
+}
+
+.fication .fic-text>li {
+  position: relative;
+  float: left;
+  height: 30px;
+  margin-right: 61px;
+}
+
+.fication .fic-text>li:hover .fic-text-menu {
+  display: block;
+}
+
+.fication .fic-text>li a {
+  font-size: 16px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+}
+
+.fic-text-menu {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 256px;
+  z-index: 1;
+  background-color: #fff;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.14);
+}
+
+.fic-text-menu li {
+  float: left;
+  width: 50%;
+  height: 47px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 47px;
+}
+
+.fic-text-menu li:hover {
+  background: -webkit-linear-gradient(left, #ffa53c, #f3504b);
+}
+
+.fic-text-menu li:hover a {
+  color: #fff;
+}
+
+.fication .fic-img {
+  float: right;
+  height: 60px;
+}
+
+.fication .fic-img li {
+  float: left;
+  width: 44px;
+  height: 44px;
+  margin: 0 10px;
+  text-align: center;
+  line-height: 44px;
+}
+
+/* 搜索页面 */
+.search-w {
+  width: 1260px;
+  padding-bottom: 125px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.search-box {
+  position: relative;
+}
+
+#left-page,
+#right-page {
+  display: inline-block;
+  width: 15px;
+  height: 13px;
+}
+
+#left-page {
+  background: url(../img/图层\ 3\ 拷贝\ 8.png) no-repeat center;
+}
+
+#right-page {
+  background: url(../img/图层\ 3\ 拷贝\ 9.png) no-repeat center;
+}
+
+.search-text {
+  width: 100%;
+  height: 18px;
+  color: #666666;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.search-text span:first-child {
+  float: left;
+}
+
+.search-text span:last-child {
+  float: right;
+}
+
+#page {
+  width: 60px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  outline: none;
+}
+
+/* 图片盒子内部元素样式 */
+.search-img-hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* -webkit-transition: all 0.5s ease-in; */
+}
+
+@keyframes search-in {
+  0% {
+    opacity: 20%;
+  }
+
+  25% {
+    opacity: 40%;
+  }
+
+  50% {
+    opacity: 60%;
+  }
+
+  75% {
+    opacity: 80%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.search-img-label {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 60px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 30px;
+}
+
+.search-img-Collection {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 30px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 3px;
+}
+
+.search-img-download,
+.search-img-more,
+.datails-more {
+  position: absolute;
+  left: 50%;
+  width: 116px;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 40px;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(left, #ffa53c, #f3504b);
+  filter: brightness(1);
+  transition: all 0.2s ease 0s;
+}
+
+/* 
+.search-img-download:hover,
+.search-img-more:hover,
+.datails-more:hover,
+.datails-download:hover {
+  color: #fff;
+  opacity: 1.2;
+  filter: brightness(1.1);
+} */
+
+.search-img-download {
+  top: 50%;
+  transform: translate(-58px, -10px);
+}
+
+.search-img-more {
+  bottom: 60px;
+  transform: translateX(-58px);
+}
+
+.white-panel:hover .search-img-hover {
+  display: block;
+  animation-name: search-in;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+/* 详情页面 */
+.details-background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+}
+
+.details-box {
+  position: absolute;
+  top: 205px;
+  left: 50%;
+  width: 1260px;
+  transform: translateX(-630px);
+  background: #ffffff;
+  border-radius: 10px;
+  font-size: 0;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.datails-close {
+  display: inline-block;
+  position: absolute;
+  top: 185px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #000;
+  line-height: 40px;
+  transform: translateX(638px);
+  z-index: 4;
+}
+
+.datails-top {
+  box-sizing: border-box;
+  margin: 0 30px;
+  height: 60px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.datails-top ol li {
+  float: left;
+  font-size: 16px;
+  line-height: 60px;
+  letter-spacing: 3px;
+}
+
+.datails-top ol li:nth-child(even) {
+  font-size: 40px;
+  transform: translateY(-2px);
+}
+
+.datails-img {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 820px;
+  /* height: 1250px; */
+  border-right: 1px solid #e6e6e6;
+  /* border-bottom: 1px solid #e6e6e6; */
+}
+
+.datails-img img {
+  width: 740px;
+  max-height: 100%;
+}
+
+.datails-text {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 50px 0 0 40px;
+  width: 397px;
+  /* height: 1250px;
+  border-bottom: 1px solid #e6e6e6; */
+  vertical-align: top;
+  letter-spacing: 2px;
+}
+
+.datails-text h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+}
+
+.datails-explain {
+  margin-top: 40px;
+}
+
+.datails-explain li {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.datails-text-right {
+  margin-right: 13px;
+  float: right;
+  color: #000;
+  font-weight: 500;
+}
+
+.datails-data {
+  margin-top: 45px;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 14px;
+}
+
+.datails-Download-data {
+  margin-right: 13px;
+  float: right;
+}
+
+.datails-download {
+  display: block;
+  margin-top: 13px;
+  width: 340px;
+  height: 54px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 54px;
+  color: #fff;
+  background: -webkit-linear-gradient(left, #ffa53c, #f3504b);
+  border-radius: 10px;
+  cursor: pointer;
+  filter: brightness(1);
+  transition: all 0.2s ease 0s;
+}
+
+.datails-but {
+  margin-top: 63px;
+  width: 340px;
+  height: 54px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+}
+
+.datails-but ul {
+  height: 100%;
+}
+
+.datails-but ul li {
+  vertical-align: middle;
+  float: left;
+  width: 33%;
+  height: 100%;
+  line-height: 54px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  border-right: 1px solid #cccccc;
+}
+
+.datails-but ul li:last-child {
+  border-right: none;
+}
+
+.datails-but ul li img {
+  margin-right: 8px;
+  vertical-align: middle;
+  transform: translateY(-3px);
+}
+
+.datails-label {
+  overflow: hidden;
+  margin: 36px 23px 0 0;
+  font-size: 14px;
+}
+
+.datails-label li {
+  float: left;
+  margin: 0 10px 10px 0;
+  height: 26px;
+  line-height: 26px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.datails-label li:nth-child(n + 2) {
+  padding: 0 12px;
+  background-color: #e6e6e6;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.datails-author {
+  margin-top: 40px;
+  width: 340px;
+  height: 55px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  line-height: 55px;
+  font-size: 18px;
+}
+
+.datails-author-img {
+  display: inline-block;
+  margin: 0 10px 0 15px;
+  vertical-align: middle;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: url(../img/详情/Avatar\ sample\ 270.png) no-repeat center;
+}
+
+.datails-author-follow {
+  float: right;
+  margin-right: 22px;
+  color: #ec581e;
+}
+
+.datails-recommend {
+  padding: 40px 0 0 40px;
+}
+
+.datails-recommend h4 {
+  font-size: 24px;
+  letter-spacing: 5px;
+  font-weight: 500;
+}
+
+.datails-more {
+  bottom: 40px;
+  transform: translateX(-38px);
+}

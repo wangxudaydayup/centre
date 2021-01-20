@@ -1,0 +1,288 @@
+body {
+    background: #fafbff;
+}
+
+.w {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.gradient {
+    background: linear-gradient(151deg, #f79545, #eb5854) !important;
+    color: #ffffff !important;
+}
+
+.layui-form-select .layui-edge {
+    border: none;
+    right: 22px;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #9a9a9a;
+    border-bottom: 1px solid #9a9a9a;
+    transform: rotate(45deg);
+    transition: all 0.2s;
+}
+
+.layui-form-selected .layui-edge {
+    margin-top: 0;
+    transform: rotate(225deg);
+}
+
+.layui-form-selected dl,
+.layui-form-selected dt {
+    font-size: 16px !important;
+}
+
+#uploadList {
+    font-size: 18px;
+}
+
+#uploadList .thead {
+    padding: 20px 0 60px;
+}
+
+#uploadList .thead h2 {
+    display: inline-block;
+    margin-right: 56px;
+    font-size: 24px;
+}
+
+#uploadList .thead button {
+    margin-right: 20px;
+    padding: 10px 18px;
+    background: #ffeedc;
+    border-radius: 20px;
+    font-size: 18px;
+    color: #fa7512;
+}
+
+#uploadList .left {
+    float: left;
+    width: 930px;
+}
+
+#uploadList .left label {
+    display: block;
+    padding-bottom: 6px;
+    font-size: 18px;
+    color: #000;
+}
+
+#uploadList .left input,
+#uploadList .left .accessory,
+#uploadList .left textarea {
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#uploadList .left #uploadFile #file {
+    float: left;
+    width: 450px;
+}
+
+#uploadList .left #uploadFile #file .accessory {
+    padding-left: 20px;
+    line-height: 50px;
+}
+
+#uploadList .left #uploadFile #file .accessory button {
+    font-size: 16px;
+    color: #343434;
+}
+
+#uploadList .left #uploadFile #format {
+    float: right;
+    width: 450px;
+}
+
+#uploadList .left #size input {
+    width: 260px;
+}
+
+#uploadList .left #size span {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#uploadList .left #resolution div {
+    font-size: 16px;
+}
+
+#uploadList .left #resolution input {
+    width: 130px;
+}
+
+#uploadList .left #resolution .layui-inline,
+#uploadList .left #resolution span {
+    position: relative;
+    top: 5px;
+}
+
+#uploadList .left #presentation {
+    font-size: 16px;
+}
+
+#uploadList .left #presentation textarea {
+    height: 120px;
+    padding: 16px 20px;
+    resize: none;
+}
+
+#uploadList .left #presentation #wordsLength {
+    position: absolute;
+    right: 20px;
+    bottom: 8px;
+    color: #9a9a9a;
+}
+
+#uploadList .left #tags .addTag {
+    height: 100px;
+    padding: 12px;
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    font-size: 14px;
+    overflow-y: auto;
+}
+
+#uploadList .left #tags .addTag span {
+    display: inline-block;
+    padding: 2px 2px 3px 10px;
+    background: #ffe1cc;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#uploadList .left #tags .addTag span strong {
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+#uploadList .left #tags .addTag button {
+    font-size: 16px;
+    color: #9a9a9a;
+}
+
+#uploadList .left #tags .tagList ul {
+    height: 66px;
+    padding-top: 25px;
+}
+
+#uploadList .left #tags .tagList ul li {
+    float: left;
+    height: 29px;
+    line-height: 29px;
+    padding-left: 23px;
+    margin: 0 9px 12px 0;
+    background: url(../img/tag.png) no-repeat;
+    cursor: pointer;
+}
+
+#uploadList .left #tags .tagList ul li span {
+    display: block;
+    padding-right: 6px;
+    background-color: #e7e6e5;
+    font-size: 14px;
+}
+
+#uploadList .right {
+    float: right;
+    width: 310px;
+}
+
+#uploadList .right .avatar {
+    font-size: 14px;
+}
+
+#uploadList .right .cover {
+    overflow: hidden;
+    width: 310px;
+    height: 213px;
+    margin: 10px 0;
+    background: #eceef3;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#uploadList .right .cover img {
+    width: 100%;
+    height: 100%;
+}
+
+#uploadList .right .cover h6 {
+    padding: 6px 0;
+    font-size: 16px;
+    color: #999999;
+}
+
+#uploadList .right .cover span {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+#uploadList .right button {
+    width: 310px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+#uploadList .right h5 {
+    margin: 12px 0;
+    font-size: 16px;
+    color: #666666;
+}
+
+#uploadList .right .prompt li {
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 25px;
+}
+
+#uploadList .right .prompt li i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-right: 2px;
+}
+
+#uploadList .right .prompt li span {
+    width: 261px;
+    font-size: 14px;
+    color: #666666;
+}
+
+#uploadList .submit {
+    padding: 30px 0 35px;
+    border-top: 1px solid #cccccc;
+}
+
+#uploadList .submit #publish {
+    width: 310px;
+    height: 60px;
+    margin-right: 18px;
+    border-radius: 30px;
+    font-size: 24px;
+}
+
+#uploadList .submit #save {
+    width: 280px;
+    height: 60px;
+    border: 1px solid #cccccc;
+    border-radius: 30px;
+    font-size: 24px;
+    color: #9a9a9a;
+}
+
+#dialog-tag {
+    padding: 35px 68px;
+}
+
+#dialog-tag input {
+    height: 50px;
+    font-size: 16px;
+}
